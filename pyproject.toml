@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "game"
+version = "0.1.0"
+description = "The game"
+authors = ["copper-boy <sermed512@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.89.1"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+pytest = "^7.2.1"
+httpx = "^0.23.3"
+utilslib = {git="https://github.com/copper-boy/utilslib", branch="master"}
+python-multipart = "^0.0.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
